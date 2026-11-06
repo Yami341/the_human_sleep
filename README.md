@@ -1,7 +1,7 @@
 # The Human Sleep — plataforma de investigación
 Investigación y desarrollo de herramientas reproducibles para estudiar sueño y señales fisiológicas. Proyecto independiente de Yami341, sin afiliación con The Human Sleep Project / BDSP.
 
-**Estado:** fase inicial. No es un dispositivo médico ni un sistema validado de diagnóstico. No se han analizado todavía registros de pacientes ni entrenado modelos.
+**Estado:** fase inicial. No es un dispositivo médico ni un sistema validado de diagnóstico. Se ha importado y visualizado una grabación pública de Sleep-EDF; no se han entrenado modelos.
 
 ## Objetivo inicial
 Construir una plataforma para investigadores que integre señales, anotaciones y calidad de datos. Primer objetivo experimental: caracterizar sueño y vigilia y comparar medidas con anotaciones de polisomnografía en adultos. EEG y señales cardiacas necesitan fuentes apropiadas; un reloj o anillo no mide EEG.
@@ -10,6 +10,7 @@ Construir una plataforma para investigadores que integre señales, anotaciones y
 - [Investigación y fuentes](docs/INVESTIGACION.md)
 - [Datos, permisos y estrategia de acceso](docs/DATOS.md)
 - [Producto, validación y hoja de ruta](docs/PRODUCTO.md)
+- [Primer piloto con EEG real y pasos para reproducirlo](docs/PILOTO_EEG.md)
 
 ## Primer componente ejecutable
 Resumen descriptivo de anotaciones de sueño normalizadas en CSV, usando solamente la biblioteca estándar de Python 3.10 o superior:
