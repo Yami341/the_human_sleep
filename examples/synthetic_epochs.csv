@@ -1,0 +1,5 @@
+start_seconds,duration_seconds,stage
+0,30,W
+30,30,N1
+60,30,N2
+90,30,UNKNOWN
