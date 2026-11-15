@@ -23,7 +23,7 @@ def sha256(path):
         return hashlib.file_digest(handle, "sha256").hexdigest()
 
 
-def download(data_dir):
+def download(data_dir, files=FILES):
     data_dir.mkdir(parents=True, exist_ok=True)
     checksums = urllib.request.urlopen(BASE + "SHA256SUMS.txt", timeout=60).read()
     (data_dir / "SHA256SUMS.txt").write_bytes(checksums)
@@ -34,7 +34,7 @@ def download(data_dir):
         digest, name = line.split(maxsplit=1)
         expected[name.lstrip("*").removeprefix("./")] = digest
     manifest = []
-    for name in FILES:
+    for name in files:
         key = "sleep-cassette/" + name
         digest = expected[key]
         path = data_dir / name
